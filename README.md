@@ -7,7 +7,7 @@ This EventHandler simulates modern EventHandlers like those of C#
 ```lua
 --- Require
 ---@class ModernEventHandler
-local EventHandler = require("EventHandler")
+local EventHandler = require("modernEventHandler")
 
 --- Init Event, do not forget that
 local testEvent = EventHandler('Test')
