@@ -1,16 +1,16 @@
-# modernEventHandler-lib
+# EventCallStack-lib
 
-This EventHandler simulates modern EventHandlers like those of C#
+This EventCallStack simulates EventHandlers similar to those of C#
 
 ## Example
 
 ```lua
 --- Require
----@class ModernEventHandler
-local EventHandler = require("modernEventHandler")
+---@class EventCallStack
+local EventCallStack = require("eventCallStack")
 
 --- Init Event, do not forget that
-local testEvent = EventHandler('Test')
+local testEvent = EventCallStack('Test')
 
 --- Add as many callbacks for the Event as required
 local callbackID = testEvent:AddCallback(function(parameter)
