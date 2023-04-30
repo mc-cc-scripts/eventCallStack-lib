@@ -13,12 +13,12 @@ local EventCallStack = require("eventCallStack")
 local testEvent = EventCallStack('Test')
 
 --- Add as many callbacks for the Event as required
-local callbackID = testEvent:AddCallback(function(parameter)
+local callbackObj = testEvent:AddCallback(function(parameter)
     print(parameter)
 end)
 
 --- Invoke Event
-testEvent:invoke('Started Callback with Id: ' .. callbackID)
+testEvent:invoke('Started Callback with Id: ' .. callbackObj.callbackID)
 ```
 
 ![Executed](Images/Executed.png)
